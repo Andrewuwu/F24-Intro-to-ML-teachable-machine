@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="content-row">
+        <div class="teachable-machine">
+            <div class="card">
+                <div class="tm-title">Machine Learning Game</div>
+                <div class="btn-group">
+                    <button id="btn" class="btn" type="button" onclick="init()">Start</button>
+                    <button class="btn" type="button" onclick="location.reload()">Reload</button>
+                </div>
+                <div id="webcam-container"></div>
+                <div id="label-container"></div>    
+            </div>
+        </div>
+       
+        <div class="game-board">
+            <div id="moving-square"></div>
+            <div class="obstacle" style="position: absolute; top: 0; left: 15%;"></div>
+            <div class="obstacle" style="position: absolute; top: 0; left: 30%;"></div>
+            <div class="obstacle" style="position: absolute; top: 0; left: 45%;"></div>
+            <div class="obstacle" style="position: absolute; top: 0; left: 60%;"></div>
+            <div class="obstacle" style="position: absolute; top: 0; left: 75%;"></div>
+        </div>
+    </div>
+   
+</body>
+</html>

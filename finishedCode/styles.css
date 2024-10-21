@@ -1,0 +1,73 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Biryani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#moving-square {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.obstacle {
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+  }
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px black;
+    background-color: white;
+    box-shadow: 5px 5px 0px 0px grey;
+}
+
+.btn {
+    width: auto;
+    border-radius: 5px;
+}
+
+.teachable-machine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    background-color: black;
+}
+
+.game-board {
+    position: relative;
+    background-color: white;
+    width: 70vw;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
